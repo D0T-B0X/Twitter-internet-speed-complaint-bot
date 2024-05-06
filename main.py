@@ -122,7 +122,3 @@ def run():
 while True:
     run()
     sleep(60)
-
-while True:
-    run()
-    sleep(60)
