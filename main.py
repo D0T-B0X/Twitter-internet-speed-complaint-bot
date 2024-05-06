@@ -118,7 +118,9 @@ def main():
     if speed_down < REQUIRED_DOWN or speed_up < REQUIRED_UP:
         twitter_post(speed_down, speed_up)
 
-
 while True:
-    main()
+    try:
+        run()
+    except selenium.common.exceptions.TimeoutException:
+        pass
     sleep(60)
