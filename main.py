@@ -110,7 +110,7 @@ def twitter_post(down_speed: float, up_speed: float):
     post_btn.click()
 
 
-def run():
+def main():
     speeds = speed_check()
     speed_down = speeds[0]
     speed_up = speeds[1]
@@ -120,5 +120,5 @@ def run():
 
 
 while True:
-    run()
+    main()
     sleep(60)
